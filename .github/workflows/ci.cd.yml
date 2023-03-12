@@ -14,7 +14,7 @@ jobs:
     - name: Deploy using ssh
       uses: appleboy/ssh-action@master
       with:
-        hosts: ${{ secrets.HOST }}
+        host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
         key: ${{ secrets.SECRET_VPS }}
         port: 22
