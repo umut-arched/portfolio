@@ -1,5 +1,5 @@
 <script>
-import designLogos from "./DesignLogos.js";
+import designLogos from "./Logos.js";
 export default {
   data() {
     return {

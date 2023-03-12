@@ -14,6 +14,6 @@
     "skipLibCheck": true,
     "noEmit": true
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "src/components/portfolio/PortfolioData.js", "src/components/portfolio/PortfolioData.js"],
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "src/view/components/portfolio/PortfolioData.jsta.jsrc/view/components/portfolio/PortfolioData.jslioData.js"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
