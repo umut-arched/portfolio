@@ -12,12 +12,12 @@ export default {
 <template>
   <div class="">
     <h1 class="text-3xl py-1">Services I offer</h1>
-    <p class="my-2">
+    <p class="my-2 px-3">
       Since the beginning of my journer as a developer and designer I've done
       remote work for clients all
       <span class="text-teal-500">over the world</span>.
     </p>
-    <p class="my-2">
+    <p class="my-2 px-5">
       My main focus lies on full stack development and motion design. Take a
       look at my
       <span class="text-teal-500">stack</span> underneath to see where I am
