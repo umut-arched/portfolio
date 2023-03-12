@@ -1,0 +1,26 @@
+name: Node.js CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Deploy using ssh
+      uses: appleboy/ssh-action@master
+      with:
+        hosts: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        key: ${{ secrets.SECRET_VPS }}
+        port: 22
+        script: |
+          cd /var/www/vhosts/uacode.tk/httpdocs/portfolio/frontend
+          git pull origin main
+          npm install
+          npm run build
+          cp -rf /var/www/vhosts/uacode.tk/httpdocs/portfolio/frontend/dist/* /var/www/vhosts/uacode.tk/httpdocs/
